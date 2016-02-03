@@ -258,7 +258,7 @@ func decodePickle(buff []byte) []string {
 		case int64:
 			ts = fmt.Sprintf("%d", t)
 		case float64:
-			ts = fmt.Sprintf("%f", t)
+			ts = fmt.Sprintf("%.f", t)
 		case *big.Int:
 			ts = fmt.Sprintf("%d", t)
 		}
@@ -272,7 +272,7 @@ func decodePickle(buff []byte) []string {
 		case int64:
 			dp = fmt.Sprintf("%d", t)
 		case float64:
-			dp = fmt.Sprintf("%.f", t)
+			dp = fmt.Sprintf("%f", t)
 		case *big.Int:
 			dp = fmt.Sprintf("%d", t)
 		}
